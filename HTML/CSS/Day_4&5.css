@@ -1,0 +1,101 @@
+body {
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  border-radius: 18px;
+  border: 10px solid #f5d94e;
+   background-image: linear-gradient(to right bottom, #845ec2, #646cc5, #4875c1, #367cb7, #3880aa, #3d8aa4, #50929c, #679896, #84a597, #a2b19d, #bebdaa, #d5cabd);
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  top: 5px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.stage {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #000000;
+}
+
+.hp img{
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+.hp {
+  font-weight: bold;
+  color: #000000;
+}
+
+.content {
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ability h4,
+.attack h4 {
+  color: #000000;
+}
+
+.attack-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attack img{
+  width: 15px;
+  height: 15px;
+}
+
+.attack-img .damage {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weakness img, .resistance img, .retreat-cost img {
+  width: 15px;
+  height: 15px;
+}
