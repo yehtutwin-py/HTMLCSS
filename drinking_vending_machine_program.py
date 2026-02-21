@@ -39,7 +39,7 @@ def report_resource(resource):
     print(f"Fruit: {resource['Fruit']}g")
     print(f"Sugar: {resource['sugar']}g")
     print(f"Ice: {resource['ice']}g")
-    print(f"Money: ${money_earned}")
+    print(f"Money: ${money_earned}\n")
 
 def is_resource_sufficient(order_requirements):
     for item in order_requirements:
